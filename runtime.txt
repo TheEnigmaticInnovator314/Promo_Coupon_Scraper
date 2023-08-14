@@ -1,1 +1,11 @@
-python-3.6.2
+!/usr/bin/env python-3.6.2
+
+import sys
+
+runtime_file = sys.argv[1]
+
+with open(runtime_file, 'r') as f:
+    r = f.read().strip()
+
+with open(runtime_file, 'w') as f:
+    f.write(r)
